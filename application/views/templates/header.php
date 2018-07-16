@@ -34,7 +34,7 @@
 				<!-- <button type="button" class="ic-search"></button>
 				<button type="button" class="ic-tic"></button> -->
 				<div class="logo-wrap">
-					<a href="home.php"><img src="<?= base_url('assets/images/logo-light.png'); ?>" /></a>
+					<a href="<?= site_url('home'); ?>"><img src="<?= base_url('assets/images/logo-light.png'); ?>" /></a>
 				</div>
 				<a href="home.php" class="navBtn home">電影</a>
 				<a href="event.php" class="navBtn event">活動</a>
