@@ -20,11 +20,23 @@ class Seat extends CI_Controller {
 	 */
 	public function index()
 	{
-        echo "Seat.php" . "<br/>";
-		$this->load->view('welcome_message');
+        $content = array();
+		$content['body_class'] = 'seat';
+
+		$view['content'] = $this->load->view('seat/index', $content, TRUE);
+		$view['partials'] = array(
+			'seat/partials/partial_view'
+		);
+
+		/* Add custom JS file */
+		/* JS files located on assets/js/cgv */
+		$view['js'] = array(
+			'hammer.min.js',
+			'cgv/seat/seat.js'
+		);
+
+		$this->load->view('main', $view);
 	}
 
-	public function test(){
-		echo "testing";
-	}
+	
 }

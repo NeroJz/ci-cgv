@@ -159,6 +159,11 @@
 <?php endif; ?>
 
 <?php if(isset($content)): ?>
+        <?php if(isset($partials) && sizeof($partials) > 0): ?>
+            <?php foreach($partials as $view): ?>
+                <?= $this->load->view($view, '', TRUE); ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
         <div id="wrapper">
             <?= $content; ?>
             <?= $this->load->view('templates/footer','',TRUE); ?>

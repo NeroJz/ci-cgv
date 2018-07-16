@@ -49,16 +49,16 @@
 					<div class="cinema-showTime">
 						<div class="session-type">
 							<p>3D IMAX (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 						</div>
 						<div class="session-type">
 							<p>2D IMAX (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 							<div class="session avai midnight"><p class="time">12:30 AM</p><p class="price currency">55</p></div>
 						</div>
@@ -71,24 +71,24 @@
 					<div class="cinema-showTime">
 						<div class="session-type">
 							<p>3D IMAX Dbox (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 							<div class="session full midnight"><p class="time">12:30 AM</p><p class="full-txt">滿座</p></div>
 						</div>
 						<div class="session-type">
 							<p>2D Atmos (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 						</div>
 						<div class="session-type">
 							<p>2D (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 						</div>
 					</div>
 				</div>
@@ -103,12 +103,12 @@
 					<div class="cinema-showTime">
 						<div class="session-type">
 							<p>3D (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 							<div class="session full midnight"><p class="time">12:30 AM</p><p class="full-txt">滿座</p></div>
-							<a href="seat.php" class="session avai midnight"><p class="time">01:30 AM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai midnight"><p class="time">01:30 AM</p><p class="price currency">55</p></a>
 						</div>
 					</div>
 				</div>
@@ -123,9 +123,9 @@
 					<div class="cinema-showTime">
 						<div class="session-type">
 							<p>3D (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 							<div class="session full midnight"><p class="time">12:30 AM</p><p class="full-txt">滿座</p></div>
 						</div>
@@ -142,9 +142,9 @@
 					<div class="cinema-showTime">
 						<div class="session-type">
 							<p>3D (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 							<div class="session full"><p class="time">11:30 PM</p><p class="full-txt">滿座</p></div>
 						</div>
 					</div>
@@ -160,9 +160,9 @@
 					<div class="cinema-showTime">
 						<div class="session-type">
 							<p>3D (英語)</p>
-							<a href="seat.php" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
-							<a href="seat.php" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">08:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session avai"><p class="time">09:30 PM</p><p class="price currency">55</p></a>
+							<a href="<?= site_url('seat') ?>" class="session hot"><p class="time">10:30 PM</p><p class="price currency">55</p></a>
 						</div>
 					</div>
 				</div>

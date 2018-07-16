@@ -23,7 +23,7 @@ class Home extends CI_Controller {
 		$content = array();
 		$content['body_class'] = 'home';
 
-		$content['sideBar'] = TRUE;
+		$content['sideBar'] = FALSE;
 		$content['special_program'] = FALSE;
 		$content['ads_content'] = FALSE;
 
@@ -32,7 +32,7 @@ class Home extends CI_Controller {
 		/* Add custom JS file */
 		/* JS files located on assets/js/cgv */
 		$view['js'] = array(
-			'home/home.js'
+			'cgv/home/home.js'
 		);
 
 		$this->load->view('main', $view);
