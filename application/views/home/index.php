@@ -132,7 +132,7 @@
 				</div>
 				
 				<!-- poster 5 -->
-				<a href="more-movie.php" class="poster more">
+				<a href="<?= site_url('movie/more'); ?>" class="poster more">
 					<p>更多正在熱映電影<img src="<?= base_url('assets/images/arr-large-orange-r.png'); ?>" /></p>
 					<img src="<?= base_url('assets/images/poster-spacer.png'); ?>" />
 				</a>
@@ -214,7 +214,7 @@
 				</div>
 				
 				<!-- poster 5 -->
-				<a href="more-movie.php#soon" class="poster more">
+				<a href="<?= site_url('movie/more#soon'); ?>" class="poster more">
 					<p>更多即將上映電影<img src="<?= base_url('assets/images/arr-large-orange-r.png'); ?>" /></p>
 					<img src="<?= base_url('assets/images/poster-spacer.png'); ?>" />
 				</a>

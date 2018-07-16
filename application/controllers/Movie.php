@@ -3,6 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Movie extends CI_Controller {
 
+	const BODY_CLASS = 'movie'; 
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -21,11 +23,24 @@ class Movie extends CI_Controller {
 	public function index()
 	{
 		$content = array();
-		$content['body_class'] = 'movie';
+		$content['body_class'] = self::BODY_CLASS;
 
 		$view['content'] = $this->load->view('movie/index', $content, TRUE);
 
 		$this->load->view('main', $view);
+	}
+
+	public function more(){
+		$content = array();
+		$content['body_class'] = self::BODY_CLASS;
+
+		$view['content'] = $this->load->view('movie/more', $content, TRUE);
+		$view['js'] = array(
+			'cgv/movie/more.js'
+		);
+
+		$this->load->view('main', $view);
+
 	}
 
 	public function test(){
