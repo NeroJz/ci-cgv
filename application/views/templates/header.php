@@ -13,7 +13,7 @@
 		<button type="button" class="ic-search"></button>
 		<button type="button" class="ic-tic"></button>
 		<div class="logo-wrap">
-			<a href="home.php"><img src="<?= base_url('assets/images/logo-light.png'); ?>" /></a>
+			<a href="<?= site_url('home'); ?>"><img src="<?= base_url('assets/images/logo-light.png'); ?>" /></a>
 		</div>
 	</div>
 	
@@ -21,9 +21,12 @@
 		<div id="topbar">
 			<div class="centerContent">
 				<button type="button" id="lang">ENGLISH</button>
-				<a href="login.php" class="navBtn login">登入</a>
+				<!-- Original Source -->
+				<!-- Hide on Phrase 1 -->
+				<!-- <a href="login.php" class="navBtn login">登入</a>
 				<a href="register.php" class="navBtn reg">成為會員</a>
-				<a href="history.php" class="navBtn hist">購票紀錄</a>
+				<a href="history.php" class="navBtn hist">購票紀錄</a> -->
+				<!-- End of Original Source -->
 			</div>
 		</div>
 		<nav>
