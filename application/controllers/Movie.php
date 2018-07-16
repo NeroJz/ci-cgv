@@ -6,29 +6,23 @@ class Movie extends MY_Controller {
 	const BODY_CLASS = 'movie'; 
 
 	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
+	 * ORIGINAL TEMPLATE: http://175.139.178.22/website_cgv/movie.php
+	 * Refer EMP Controller: 
+	 * 1. ticketing/movie_detail (showing)
 	 */
 	public function index()
 	{
 		$content = array();
 		$content['body_class'] = self::BODY_CLASS;
-
-
 		$this->render($content, 'movie/index');
 	}
 
+	/**
+	 * ORIGINAL TEMPLATE: http://localhost/cgv/more-movie.php
+	 * Refer EMP Controller: 
+	 * 1. ticketing/by_movie (showing)
+	 * 2. ticketing/upcoming (upcoming show)
+	 */
 	public function more(){
 		$content = array();
 		$content['body_class'] = self::BODY_CLASS;
