@@ -24,6 +24,9 @@ class Payment extends CI_Controller {
 		$content['body_class'] = 'payment';
 
 		$view['content'] = $this->load->view('payment/index', $content, TRUE);
+		$view['js'] = array(
+			'cgv/payment/payment.js'
+		);
 
 		$this->load->view('main', $view);
 	}

@@ -130,3 +130,10 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript">
+
+		var site_url = "<?= site_url(); ?>";
+	
+	</script>
