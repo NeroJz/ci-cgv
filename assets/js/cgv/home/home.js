@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     //highlight nav/footer button
@@ -51,5 +50,9 @@ $(document).ready(function () {
         // popup_set_slide(popCont3);
         // popup_init_slide();
     };
+
+    $('.detail').on('click', function () {
+        window.location.href = site_url + 'movie';
+    });
 
 });

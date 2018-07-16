@@ -219,7 +219,7 @@
 				
 				<!-- poster 1 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -237,7 +237,7 @@
 				
 				<!-- poster 2 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -255,7 +255,7 @@
 				
 				<!-- poster 3 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -273,7 +273,7 @@
 				
 				<!-- poster 4 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -301,7 +301,7 @@
 			<div id="soon">
 				<!-- poster 1 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -319,7 +319,7 @@
 				
 				<!-- poster 2 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -337,7 +337,7 @@
 				
 				<!-- poster 3 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -355,7 +355,7 @@
 				
 				<!-- poster 4 -->
 				<div class="poster">
-					<a href="movie.php" class="mob-link"></a>
+					<a href="<?= site_url('movie') ?>" class="mob-link"></a>
 					<div class="over-wrap">
 						<div class="info">
 							<div class="title">逃出魔幻紀：叢林挑機</div>
@@ -444,3 +444,7 @@
     <?= $this->load->view('templates/footer','',TRUE); ?>
 	
 </div>
+
+<script type="text/javascript">
+    var site_url = "<?php echo site_url(); ?>";
+</script>

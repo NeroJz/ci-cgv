@@ -1077,7 +1077,7 @@ $(document)
 	.on('click', '.sitemap .more', footer_more)
 
 	.on('click', '#seat .back', function () { window.history.back(); })
-	.on('click', '.detail', function () { window.location.href = 'movie.php' })
+	// .on('click', '.detail', function () { window.location.href = 'movie.php' })
 	.on('click', '#payment .back', function () { window.location.href = 'seat.php' })
 	.on('click', '#payment .next', function () { window.location.href = 'thanks-purchase.php' })
 	.on('click', '.logout', function () { window.location.href = 'login.php' })
