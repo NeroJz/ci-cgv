@@ -1,0 +1,350 @@
+/* ********** home ********** */
+*{
+	color: #666;
+	font-family: Arial, Microsoft YaHei, Hiragino Sans GB, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+#sideBar,
+#banner.owl-carousel,
+#wrapper>div,
+#cust_alert,
+header,
+footer{
+	display:none;
+}
+body{
+	background: #FDFCF0 url(images/loading.gif) center 160px no-repeat;
+}
+
+
+/* code below not in use */
+h2{
+	color: #333;
+	font-size: 20px;
+	line-height: 44px;
+	margin-bottom: 10px;
+}
+#home header{
+	background-color: rgba(0,0,0,.75);
+}
+/* ===== 1.1 Group style ========== */
+.logo-wrap a{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hamburger,
+.ic-search,
+.ic-tic{
+	border: none;
+	height: 44px;
+	width: 44px;
+}
+/* ===== 1.3 Header & nav ========== */
+header,
+header *{
+	display: block;
+}
+header{
+	background: #000;
+	font-size: 0;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+	
+	-webkit-transition: top .5s ease-in-out;
+	-moz-transition: top .5s ease-in-out;
+	transition: top .5s ease-in-out;
+}
+header .mob{
+	display: block;
+	height: 44px;
+}
+.hamburger{
+	background-color: transparent;
+	float: left;
+	left: 0;
+	position: fixed;
+	top: 0;
+	z-index: 201;
+}
+.hamburger:hover .bar{
+	background-color: #FF671E;
+}
+.hamburger.opened .bar{
+	background-color: #000;
+}
+.hamburger .bar{
+	background: #fff;
+	cursor: pointer;
+	height: 2px;
+	left: 50%;
+	margin-left: -11px;
+	position: absolute;
+	width: 22px;
+	-webkit-transition: transform .5s ease-in-out, margin .5s ease-in-out;
+	-moz-transition: transform .5s ease-in-out, margin .5s ease-in-out;
+	transition: transform .5s ease-in-out, margin .5s ease-in-out;
+}
+.bar.top{
+	top: calc(50% - 7px);
+}
+.bar.mid{
+	top: calc(50% - 1px);
+	-webkit-transition: width .5s ease-in-out;
+	-moz-transition: width .5s ease-in-out;
+	transition: width .5s ease-in-out;
+	
+}
+.bar.bot{
+	top: calc(50% + 5px);
+}
+.logo-wrap{
+	margin-left: 44px;
+}
+.logo-wrap:after{
+	content: "";
+	display: inline-block;
+	height: inherit;
+	vertical-align: middle;
+}
+.logo-wrap a{
+	display: inline-block;
+	height: 44px;
+	padding: 10px 0;
+}
+.logo-wrap img{
+	height: 100%;
+	width: auto;
+}
+.logo-wrap input{
+	background-color: transparent;
+	line-height: 44px;
+}
+.ic-search{
+	background: url(images/search.png) center no-repeat;
+	float: right;
+	position: relative;
+}
+.ic-tic{
+	display: none;
+}
+#home .ic-tic{
+	background: url(images/ic-tic-indi-orange.png) center -10px no-repeat;
+	display: inline-block;
+	float: right;
+	position: relative;
+}	
+#main-nav{
+	background: #F5F5F5;
+	height: 100%;
+	left: -75%;
+	/*overflow-y: auto;*/
+	position: fixed;
+	top: 0;
+	width: 75%;
+	z-index: 200;
+}
+#topbar{
+	background: #fff;
+	padding: 44px 0 10px 0;
+}
+nav{
+	height: 44px;
+	padding: 10px 0;
+}
+nav .ic-search,
+nav .ic-tic,
+nav .logo-wrap{
+	display: none;
+}
+#lang{
+	background: transparent url(images/lang.png) right 10px center no-repeat;
+	border: none;
+	color: #FF671E;
+	float: right;
+	font-size: 100%;
+	height: 44px;
+	margin-top: -44px;
+	padding: 0 40px 0 15px;
+	position: relative;
+	text-align: left;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.navBtn{
+	color: #666;
+	display: block;
+	font-size: 120%;
+	line-height: 44px;
+	padding: 0 15px;
+	text-decoration: none;
+	vertical-align: top;
+}
+.navBtn:hover{
+	background: rgba(255,255,255,.2);
+}
+#topbar .navBtn.active,
+nav .navBtn.active{
+	color: #FF671E;
+}
+#topbar .navBtn{
+	color: #000;
+}
+.member-menu{
+	background-color: #fff;
+	padding: 0 15px;
+}
+.username{
+	background: url(../images/arrow-b-tiny.png) right 15px center no-repeat;
+	color: #000;
+	display: block;
+	line-height: 44px;
+	text-align: left;
+	width: 100%;
+	z-index: 10;
+}
+
+@media (min-width:768px){
+/* ===== 1.3[768] Header & nav ========== */
+	header .mob{
+		display: none;
+	}
+	.hamburger{
+		display: none;
+	}
+	.logo-wrap{
+		display: inline-block;
+		float: left;
+		margin-left: 0;
+		padding: 0 15px;
+		vertical-align: top;
+	}
+	#main-nav{
+		background-color: transparent;
+		padding-top: 0;
+		position: static;
+		width: 100%;
+	}
+	#main-nav + .overlay{
+		display: none !important;
+	}
+	#topbar{
+		height: 44px;
+		padding: 0;
+		text-align: right;
+	}
+	nav{
+		padding: 0;
+	}
+	nav .centerContent{
+		text-align: right;
+	}
+	nav .ic-search,
+	nav .ic-tic,
+	nav .logo-wrap{
+		display: inline-block;
+	}
+	#lang{
+		background-position: 15px center;
+		float: left;
+		margin-top: 0;
+		padding-left: 45px;
+		padding-right: 15px;
+	}
+	#lang:after{
+		display: none;
+	}
+	.navBtn{
+		color: #fff;
+		display: inline-block;
+		font-size: 100%;
+		padding: 0 20px;
+	}
+	#topbar .navBtn{
+		font-size: 100%;
+		margin: 0;
+		padding: 0 15px;
+		position: relative;
+	}
+	#topbar .navBtn:after{
+		border-right: 1px solid rgba(0,0,0,.1);
+		content: "";
+		display: block;
+		height: 12px;
+		margin-top: -6px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+	}
+	#topbar .navBtn:last-child:after{
+		display: none;
+	}
+	.member-menu{
+		padding: 0;
+		position: absolute;
+		right: 0;
+		z-index: 100;
+	}
+	.member-menu.opened{
+		-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+	}
+	.username{
+		border-bottom: 0;
+		margin-bottom: 0;
+		padding-left: 15px;
+		padding-right: 33px;
+	}
+	.options-wrap{
+		padding: 0 15px 10px 15px;
+		width: 100%;
+		z-index: -1;
+	}
+}
+
+
+@media (min-width:980px){
+	body{
+		padding-top: 108px;
+	}
+	body#home{
+		padding-top: 44px;
+	}
+	.centerContent{
+		left: 50%;
+		margin-left: -490px;
+		position: relative;
+	}
+	
+	
+	/* ===== 1.3[980] Header & nav ========== */
+	.navBtn{
+		font-size: 120%;
+		line-height: 64px;
+	}
+	#topbar .navBtn{
+		line-height: 44px;
+	}
+	.logo-wrap a{
+		height: 64px;
+	}
+	.ic-search{
+		margin-top: 10px;	
+	}
+	#home .ic-tic{
+		background-position: center top;
+		height: 64px;
+		padding: 10px 0;
+	}
+}
