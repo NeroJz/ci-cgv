@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Movie extends CI_Controller {
+class Movie extends MY_Controller {
 
 	const BODY_CLASS = 'movie'; 
 
@@ -25,25 +25,18 @@ class Movie extends CI_Controller {
 		$content = array();
 		$content['body_class'] = self::BODY_CLASS;
 
-		$view['content'] = $this->load->view('movie/index', $content, TRUE);
 
-		$this->load->view('main', $view);
+		$this->render($content, 'movie/index');
 	}
 
 	public function more(){
 		$content = array();
 		$content['body_class'] = self::BODY_CLASS;
-
-		$view['content'] = $this->load->view('movie/more', $content, TRUE);
-		$view['js'] = array(
+		$content['js'] = array(
 			'cgv/movie/more.js'
 		);
 
-		$this->load->view('main', $view);
+		$this->render($content, 'movie/more');
 
-	}
-
-	public function test(){
-		echo "testing";
 	}
 }

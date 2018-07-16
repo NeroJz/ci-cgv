@@ -1,7 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Payment extends CI_Controller {
+class Payment extends MY_Controller {
+
+	const BODY_CLASS = 'payment'; 
 
 	/**
 	 * Index Page for this controller.
@@ -21,17 +23,13 @@ class Payment extends CI_Controller {
 	public function index()
 	{
 		$content = array();
-		$content['body_class'] = 'payment';
-
-		$view['content'] = $this->load->view('payment/index', $content, TRUE);
-		$view['js'] = array(
+		$content['body_class'] = self::BODY_CLASS;
+		$content['js'] = array(
 			'cgv/payment/payment.js'
 		);
 
-		$this->load->view('main', $view);
+		$this->render($content, 'payment/index');
 	}
 
-	public function test(){
-		echo "testing";
-	}
+	
 }

@@ -1,7 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends MY_Controller {
+
+	const BODY_CLASS = 'home'; 
 
 	/**
 	 * Index Page for this controller.
@@ -21,20 +23,21 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$content = array();
-		$content['body_class'] = 'home';
+		$content['body_class'] = self::BODY_CLASS;
 
 		$content['sideBar'] = FALSE;
 		$content['special_program'] = FALSE;
 		$content['ads_content'] = FALSE;
 
-		$view['content'] = $this->load->view('home/index', $content, TRUE);
-
 		/* Add custom JS file */
 		/* JS files located on assets/js/cgv */
-		$view['js'] = array(
+		$content['js'] = array(
 			'cgv/home/home.js'
 		);
 
-		$this->load->view('main', $view);
+		$this->render($content, 'home/index');
+		
 	}
+
+	
 }

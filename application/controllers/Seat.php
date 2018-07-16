@@ -1,7 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Seat extends CI_Controller {
+class Seat extends MY_Controller {
+
+	const BODY_CLASS = 'seat'; 
 
 	/**
 	 * Index Page for this controller.
@@ -21,21 +23,19 @@ class Seat extends CI_Controller {
 	public function index()
 	{
         $content = array();
-		$content['body_class'] = 'seat';
-
-		$view['content'] = $this->load->view('seat/index', $content, TRUE);
-		$view['partials'] = array(
+		$content['body_class'] = self::BODY_CLASS;
+		$content['partials'] = array(
 			'seat/partials/partial_view'
 		);
 
 		/* Add custom JS file */
 		/* JS files located on assets/js/cgv */
-		$view['js'] = array(
+		$content['js'] = array(
 			'hammer.min.js',
 			'cgv/seat/seat.js'
 		);
 
-		$this->load->view('main', $view);
+		$this->render($content, 'seat/index');
 	}
 
 	
