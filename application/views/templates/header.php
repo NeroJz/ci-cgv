@@ -28,8 +28,8 @@
 		</div>
 		<nav>
 			<div class="centerContent">
-				<button type="button" class="ic-search"></button>
-				<button type="button" class="ic-tic"></button>
+				<!-- <button type="button" class="ic-search"></button>
+				<button type="button" class="ic-tic"></button> -->
 				<div class="logo-wrap">
 					<a href="home.php"><img src="<?= base_url('assets/images/logo-light.png'); ?>" /></a>
 				</div>
