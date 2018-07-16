@@ -20,8 +20,12 @@ class Payment extends CI_Controller {
 	 */
 	public function index()
 	{
-        echo "Payment.php" . "<br/>";
-		$this->load->view('welcome_message');
+		$content = array();
+		$content['body_class'] = 'payment';
+
+		$view['content'] = $this->load->view('payment/index', $content, TRUE);
+
+		$this->load->view('main', $view);
 	}
 
 	public function test(){
