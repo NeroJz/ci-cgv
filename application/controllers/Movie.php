@@ -20,8 +20,12 @@ class Movie extends CI_Controller {
 	 */
 	public function index()
 	{
-        echo "Movie.php" . "<br/>";
-		$this->load->view('welcome_message');
+		$content = array();
+		$content['body_class'] = 'movie';
+
+		$view['content'] = $this->load->view('movie/index', $content, TRUE);
+
+		$this->load->view('main', $view);
 	}
 
 	public function test(){

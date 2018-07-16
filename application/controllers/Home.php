@@ -23,6 +23,7 @@ class Home extends CI_Controller {
 		$content = array();
 		$content['body_class'] = 'home';
 
+		$content['sideBar'] = TRUE;
 		$content['special_program'] = FALSE;
 		$content['ads_content'] = FALSE;
 
